@@ -1,7 +1,7 @@
 # Internet and Applications
  Final Project for Appathon@NTUA 2020
 
- Χρήση δοθέντων WebServices
+# Χρήση δοθέντων WebServices
 
  Από τα δεδομένα του καιρού (real time – Web Service 11: getCurrentTemperatureStartingPoint) θα επιστρέφονται οι λεωφορειακές γραμμές στην αφετηρία των οποίων δε βρέχει αυτή τη στιγμή, καθώς και το όνομα των τερματικών σταθμών που μπορεί να φτάσει κάποιος χρησιμοποιώντας αυτές τις γραμμές (Web Service 6: getPathOriginDestinationIds) και (Web Service 2: getDeviceName). 
  Ακόμη, θα επιστρέφεται η χρονική διάρκεια που απαιτείται για να φτάσει κάποιος από την αφετηρία των παραπάνω γραμμών στον τερματικό σταθμό (Web Service 9: getPathDuration ) καθώς και η τρέχουσα θερμοκρασία στην αφετηρία των παραπάνω διαδρομών (Web Service 11: getCurrentTemperatureStartingPoint). 
