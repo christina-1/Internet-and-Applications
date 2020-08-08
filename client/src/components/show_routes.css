@@ -1,0 +1,20 @@
+.text_routes{
+    position: relative;
+    top: -170px;
+    text-align: left;
+    padding: -1000px;
+}
+.loading{
+    position: relative;
+    top: -200px;
+    text-align: center;
+    padding: -1000px;
+}
+
+.message{
+    position: relative;
+    top: -170px;
+    text-align: center;
+    padding: -1000px;
+    font-size: 20;
+}

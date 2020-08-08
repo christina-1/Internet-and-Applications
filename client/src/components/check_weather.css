@@ -1,0 +1,26 @@
+
+.icon{
+    position: relative;
+    top: 20px;
+    left: 2px;
+    
+}
+.text{
+    position: relative;
+    top: -50px;
+    text-align: left;
+    padding: -100px;
+}
+.txt{
+    position: relative;
+    text-align: left;
+    padding: -1000px;
+}
+
+.dark_background {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('file:///Volumes/Animus/Jon/Dropbox/website/hellcity.jpg');
+   -webkit-background-size: cover;
+   -moz-background-size:  cover;
+   -o-background-size: cover;
+   background-size: cover;
+ }
