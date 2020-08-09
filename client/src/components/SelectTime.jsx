@@ -82,7 +82,7 @@ class SelectTime extends React.Component {
             <div className="wrapper">
                 <div className="form-wrapper">
                     <h1>Enter the time</h1>
-                    <form action="http://localhost:9000/showRoutes/${req.body.time}" method="POST">
+                    <form action="http://localhost:9000/giveTime" method="POST">
                         <div className="minutes">
                             <label htmlFor="minutes"> Maximum available time</label>
                             <input type = "number" min = "1" max = "20000" name = "time" placeholder = "Type time..." 

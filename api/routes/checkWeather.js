@@ -139,7 +139,6 @@ router.get('/', function(req,res,next){
 
                 final_result = new Array();
                 function create_result(j){
-                    console.log(path[j].Path_id + " j: " + j + " " + weather_id[path[j].Path_origin_device_id]);
                     if(path_id_duration[path[j].Path_id]!=null){
                         final_result.push({"Path_id": path[j].Path_id , "Path_name": path[j].Path_Name, "Device_dest":path[j].Path_destination_device_id, "Device_name": path_device[path[j].Path_destination_device_id], "Temperature": temperature[path[j].Path_origin_device_id],
                         "Feels_like": feels_like[path[j].Path_origin_device_id], "Duration":path_id_duration[path[j].Path_id], "icon": icon[path[j].Path_origin_device_id] });
