@@ -16,13 +16,14 @@
 Για την εκτέλεση της εφαρμογής θα πρέπει να υπάρχει εγκατεστημένο στον υπολογιστή το Node js μαζί με το οποίο εγκαθίσταται και το npm, το οποίο μπορεί να εγκατασταθεί από τον σύνδεσμο που ακολουθεί: <https://nodejs.org/en/download/>.
 
 Τα βήματα που πρέπει να ακολουθηθούν για την εγκατάσταση του project είναι τα ακόλουθα:
-1. Εκτέλεση της εντολής `git clone https://github.com/christine98/Internet-and-Applications.git` για να κατεβει το project στον υπολογιστή.
+1. Εκτέλεση της εντολής `git clone https://github.com/christine98/Internet-and-Applications.git` για να κατέβει το project στον υπολογιστή.
 
-2. Εκτέλεση διαδοχικά των εντολών `npm install` και `npm start` στο directory του project, στο φάκελο client.
+2. Εκτέλεση διαδοχικά των εντολών `npm install` και `npm start` σε μία γραμμή εντολών στο directory του project, στο φάκελο api.
 
-3. Εκτέλεση διαδοχικά των εντολών `npm install` και `npm start` στο directory του project, στο φάκελο api.
+3. Εκτέλεση διαδοχικά των εντολών `npm install` και `npm start` σε μία γραμμή εντολών στο directory του project, στο φάκελο client.
 
 4. Το project μπορεί να βρεθεί σε έναν browser στη διεύθυνση <http://localhost:3000/>. Προτείνεται η χρήση του browser Google Chrome.
 
 
-
+# Παρουσίαση εφαρμογής
+Το βίντεο με την παρουσίαση της εφαρμογής βρίσκεται στον ακόλουθο σύνδεσμο: <https://www.youtube.com/watch?v=ad0WYS_qlyY&feature=youtu.be>.
