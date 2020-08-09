@@ -1,5 +1,5 @@
 import React from 'react';
-import "./components/select_time.css";
+import '../css/select_time.css';
 import ShowRoutes from './ShowRoutes';
 
 var myTime = 0;
@@ -89,7 +89,7 @@ class SelectTime extends React.Component {
                             onChange = {this.onHandleNumberChange}/> 
                             <div style = {{fontSize: 15, color: "#b30039"}}> 
                             {this.state.errorText}</div>
-                            <div className="createAccount">
+                            <div className="submitForm">
                                 <button onClick = { (e) => { e.preventDefault(); this.onClickHandler();}} type = "submit"> Search </button>
                             </div>       
                         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
-import './components/home.css';
-import "./components/check_weather.css";
+import '../css/home.css';
+import '../css/check_weather.css';
 
 
 class CheckWeather extends React.Component{
@@ -16,7 +16,6 @@ class CheckWeather extends React.Component{
 
 //componentDidMount: Fetch json array of objects from given url and update state.
 componentDidMount() {
-
     fetch('http://localhost:9000/checkWeather')
         .then(res => res.json())
         .then(json => {
@@ -33,7 +32,7 @@ componentDidMount() {
 render() {
     const { isLoaded, items } = this.state;
     if (!isLoaded)
-        return <div>  Loading... Please Wait! </div>;
+        return <div className='background_weather'>  Loading... Please Wait! </div>;
 
     return (
         <div className='dark_background'>

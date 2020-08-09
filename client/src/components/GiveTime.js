@@ -1,5 +1,5 @@
 import React from 'react';
-import './components/home.css';
+import '../css/home.css';
 
 class GiveTime extends React.Component{
     constructor(props){

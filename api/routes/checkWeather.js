@@ -2,7 +2,6 @@ var express = require("express");
 var router = express.Router();
 var request = require('request-promise');
 
-
 router.get('/', function(req,res,next){
         (async function main() {
             try {
@@ -86,7 +85,7 @@ router.get('/', function(req,res,next){
                 var len = path.length;
                 weather_urls = new Array ();
                     for(i=0; i<len; i++){
-                        var weather_url = `http://api.openweathermap.org/data/2.5/weather?lat=${device_lat[path[i].Path_origin_device_id]}&lon=${device_lon[path[i].Path_origin_device_id]}&APPID=d002d3e5ab8bd4382beb8ed2527374ef`;
+                        var weather_url = `http://api.openweathermap.org/data/2.5/weather?lat=${device_lat[path[i].Path_origin_device_id]}&lon=${device_lon[path[i].Path_origin_device_id]}&APPID=6706f94674531cd9018221139b9fe25f`;
                         weather_urls[i] = weather_url;
                     }
 
@@ -153,7 +152,6 @@ router.get('/', function(req,res,next){
                     }
                 }
                 not_raining.forEach(create_result);
-         
                res.send(final_result); 
             }catch(e) {
                 console.log(e.message);

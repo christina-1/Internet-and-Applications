@@ -1,5 +1,5 @@
 import React from 'react';
-import './components/show_routes.css';
+import '../css/show_routes.css';
 
 class ShowRoutes extends React.Component{
   constructor(props) {

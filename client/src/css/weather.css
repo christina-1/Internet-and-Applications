@@ -1,18 +1,21 @@
-.wrapper {
+.wrapper_weather {
     height: 100vh;
     width: 100%;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    margin-right: 500px; 
+    margin-left:  20px;
+    margin-top: 50px; 
     background-color: none;
   }
   
-  .form-wrapper {
+  .form-wrapper_weather {
     width: 400px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 20px;
+    /*display: flex;
+    flex-direction: column;*/
+    padding: 50px 20px;
     border-radius: 10px;
     box-shadow: 0px 10px 50px #555;
     background-color: #faf0f0;
@@ -40,48 +43,14 @@
     font-weight: lighter;
   }
   
-  input {
-    padding: 10px 10px;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid #cfcfcf;
-  }
-  
-  input::placeholder {
-    font-size: 1.2em;
-    font-weight: lighter;
-    color: #999;
-  }
-  
-  input.error {
-    border: 1px solid red;
-  }
-  
-  .errorMessage {
-    color: red;
-    font-size: 0.75em;
-    display: relative;
-  }
-  
-  .minutes {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
-  
-
-  .minutes {
-    width: 100%;
-  }
-  
-  .createAccount {
+  .updateWeather {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .createAccount button {
+  .updateWeather button {
     background-color: #9e515b;
     color: #fff;
     border: 2px solid #fff;
@@ -95,14 +64,15 @@
     transition-duration: 0.4s;
   }
   
-  .createAccount button:hover {
+  .updateWeather button:hover {
     color: #9e515b;
     background-color: rgb(245, 196, 196);
     border: 2px solid #fff;
   }
   
-  .createAccount small {
+  .updateWeather small {
     color: #999;
     font-weight: lighter;
   }
+ 
 

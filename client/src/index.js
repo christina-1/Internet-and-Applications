@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './components/city_travel.css';
-import Home from './Home';
+import './css/city_travel.css';
+import Home from './components/Home';
 
 ReactDOM.render(
   <React.StrictMode>
