@@ -84,10 +84,11 @@ router.get('/', function(req,res,next){
 
                 var len = path.length;
                 weather_urls = new Array ();
-                    for(i=0; i<len; i++){
-                        var weather_url = `http://api.openweathermap.org/data/2.5/weather?lat=${device_lat[path[i].Path_origin_device_id]}&lon=${device_lon[path[i].Path_origin_device_id]}&APPID=6706f94674531cd9018221139b9fe25f`;
-                        weather_urls[i] = weather_url;
-                    }
+                
+                for(i=0; i<len; i++){
+                    var weather_url = `http://api.openweathermap.org/data/2.5/weather?lat=${device_lat[path[i].Path_origin_device_id]}&lon=${device_lon[path[i].Path_origin_device_id]}&APPID=6706f94674531cd9018221139b9fe25f`;
+                    weather_urls[i] = weather_url;
+                }
 
                 weather = new Array();
                 result = new Array();
@@ -119,9 +120,6 @@ router.get('/', function(req,res,next){
                     var tmp = weather.weather;
                     
                     weather_id[path[i].Path_origin_device_id] = tmp[0].id;
-                    console.log(path[i].Path_origin_device_id + " i: " + i);
-
-                    console.log(typeof(weather_id[path[i].Path_origin_device_id]));
                     if(weather_id[path[i].Path_origin_device_id]>=800){
                         temperature[path[i].Path_origin_device_id] = weather.main.temp-273.15; // convert kelvin to celsius
                         
@@ -137,7 +135,7 @@ router.get('/', function(req,res,next){
                         not_raining.push(i);
                     }
                 }
-                console.log("NOT RAINING " + not_raining);
+                
 
                 final_result = new Array();
                 function create_result(j){

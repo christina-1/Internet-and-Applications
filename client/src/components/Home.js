@@ -18,7 +18,7 @@ class Home extends React.Component{
           <div className="background">
             <div className="btn-group">
                 <Link to="/" style={{ textDecoration: 'none' }}> <button class="button" style={{width: '33.3%'}}>Home</button> </Link> 
-                <Link to="/giveTime" style={{ textDecoration: 'none' }}> <button class="button" style={{width: '33.3%'}}>Pick Time</button>  </Link>
+                <Link to="/giveTime" style={{ textDecoration: 'none' }}> <button class="button" style={{width: '33.3%'}}>Check Duration</button>  </Link>
                 <Link to="/weather" style={{ textDecoration: 'none' }}> <button class="button" style={{width: '33.3%'}}> Check the Weather </button>  </Link>
               </div>
             <Route path="/" exact strict  render={

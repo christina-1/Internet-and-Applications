@@ -8,7 +8,6 @@ var logger = require('morgan');
 var cors = require('cors');
 var app = express();
 
-var indexRouter = require('./routes/city_travel');
 var checkWeatherRouter = require("./routes/checkWeather");
 var timeRouter = require("./routes/giveTime");
 var showRoutesRouter = require("./routes/showRoutes");
@@ -24,7 +23,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
 app.use('/checkWeather', checkWeatherRouter);
 app.use('/giveTime', timeRouter);
 app.use('/showRoutes', showRoutesRouter);

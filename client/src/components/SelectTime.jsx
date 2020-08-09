@@ -7,7 +7,7 @@ class SelectTime extends React.Component {
     constructor(){
         super();
 
-        this.onHandleNumberChange = this.onHandleNumberChange.bind(this);
+        this.onChangeHandler = this.onChangeHandler.bind(this);
 
         this.state = {
             text: "Enter maximum time",
@@ -18,7 +18,7 @@ class SelectTime extends React.Component {
         };
     }
 
-    onHandleNumberChange = c => {
+    onChangeHandler = c => {
         let time = c.target.value;
         this.setState({results: time});
 
@@ -82,11 +82,11 @@ class SelectTime extends React.Component {
             <div className="wrapper">
                 <div className="form-wrapper">
                     <h1>Enter the time</h1>
-                    <form action="http://localhost:9000/giveTime" method="POST">
+                    <form action="http://localhost:9000/showRoutes/${req.body.time}" method="POST">
                         <div className="minutes">
                             <label htmlFor="minutes"> Maximum available time</label>
                             <input type = "number" min = "1" max = "20000" name = "time" placeholder = "Type time..." 
-                            onChange = {this.onHandleNumberChange}/> 
+                            onChange = {this.onChangeHandler}/> 
                             <div style = {{fontSize: 15, color: "#b30039"}}> 
                             {this.state.errorText}</div>
                             <div className="submitForm">
