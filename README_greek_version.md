@@ -3,7 +3,7 @@
  Ονοματεπώνυμο: Χριστίνα Ντούρμα  
  Αριθμός Μητρώου: 03116116  
  
- Το αρχείο README στα αγγλικά βρίσκεται [εδώ](README.md).
+ Το αρχείο README στα αγγλικά βρίσκεται [εδώ](README.md).  
  The english version of the README file can be found [here](README.md).
 
 # City Travel
