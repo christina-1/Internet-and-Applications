@@ -2,12 +2,9 @@
  Final Project for Appathon@NTUA 2020  
  Name: Christina Ntourma
  
- The greek README file can be found [here]().  
- Ονοματεπώνυμο: Χριστίνα Ντούρμα  
- Αριθμός Μητρώου: 03116116  
-
+ The greek README file can be found [here](README.md).  
+ 
 # City Travel
-
  The id and the name of the bus lines at the beginning of which it is not currently raining, as well as the name of the terminal station someone can reach using these lines, is returned from the data acquired using API: https://openweathermap.org/api. Moreover the time duration for travelling from the beginning of the line to the terminal station as well as the temperature, the real-feel temperature and an icon showing the current weather at the beginning of these routes is also displayed. Data not relative to the weather are obtained through API http://feed.opendata.imet.gr:23577/itravel.
  Furthermore, the users can provide as input the maximum amount of time they want to devote in order to reach a terminal station, and the routes with a duration less than or equal to the given one are returned, using once more the API http://feed.opendata.imet.gr:23577/itravel. 
  
